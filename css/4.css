@@ -1,0 +1,76 @@
+.card{
+	height: 15rem;
+	width: 12rem;
+	margin-right: 20px;
+	text-align: center;
+	box-shadow: .5px .5px 3px lightgray;
+	
+}
+.card:hover{
+	box-shadow: 2px 2px 10px gray;
+}
+#cards{
+	display: flex;
+	justify-content: center;
+}
+.card #card-2title{
+	background-color: #17b978;
+	color: #fff;
+}
+.card #card-1title{
+	background-color: #ff9f68;
+	color: #fff;
+}
+.card #card-3title{
+	background-color: #ff304f;
+	color: #fff;
+}
+#title{
+	text-align: center;
+	font-size: 5rem;
+	padding: 2rem;
+}
+img{
+	height: 1em;
+	width: 1em;
+}
+#totalInfected{
+	font-size: 2rem;
+	color: #ff9f68;
+}
+#totalRecovered{
+	font-size: 2rem;
+	color: #17b978;
+}
+#totalDeaths{
+	font-size: 2rem;
+	color: #ff304f;
+}
+p{
+	font-size: 3rem;
+}
+table{
+	text-align: center;
+}
+th{
+	background-color: #9f0fef;
+	color: #fff;
+}
+tr:nth-child(odd){
+	background-color: #e2f3f5;
+}
+#newHeader{
+	font-size: 2rem;
+}
+@media all and (max-width: 600px){
+	#cards{
+		display: grid;
+	}
+	.card{
+		margin: 1rem;
+	}
+	#title{
+		padding: 1rem;
+		font-size: 3rem;
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Covid-19</title>
+	<link rel="stylesheet" type="text/css" href="css/4.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h3 id="title">C<img src="img/virus.png">vid-19</h3>
+		<div id="cards">
+		<div class="card">
+			<div class="card-body" id="card-1">
+				<h4 class="card-title" id="card-1title">Infected</h4>
+				<hr>
+				<div id="totalInfected"></div>
+				<div class="card-text">Number of active cases.</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body" id="card-2">
+				<h4 class="card-title" id="card-2title">Recovered</h4>
+				<hr>
+				<div id="totalRecovered"></div>
+				<div class="card-text">Number of recovered cases.</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body" id="card-3">
+				<h4 class="card-title" id="card-3title">Deaths</h4>
+				<hr>
+				<div id="totalDeaths"></div>
+				<div class="card-text">Number of deaths from covid-19.</div>
+			</div>
+		</div>
+		</div>
+		<hr>
+		<div class="container">
+			<canvas id="myChart">
+				
+			</canvas>
+		</div>
+		<hr>
+		<h3 class="text-center my-4" id="newHeader">Cases Around The World</h3>
+		<hr>
+		<p class="text-center">Enter country name below to search data.</p>
+		<form class="form-group">
+			<input type="text" placeholder="Search your country..." class="form-control" id="searchForm">
+		</form>
+	</div>
+	
+	<div class="container">
+		<div class="table-responsive mt-3">
+			<table class="table table-bordered" id="tbval">
+			
+			<thead>
+				<tr>
+					<th>Country</th>
+					<th>Total Confirmed</th>
+					<th>Total Recovered</th>
+					<th>Total Deaths</th>
+				</tr>
+			</thead>
+			
+		</table>
+		</div>
+		
+	</div>
+
+<script src="javascript/4.js"></script>
+</body>
+</html>
